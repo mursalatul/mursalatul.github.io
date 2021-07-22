@@ -38,4 +38,5 @@ function import_project_data(html_id, project_picture, project_title, project_li
 // project 1(age_calculator)
 import_project_data("project1", "/pictures/age_calculator.png", "Age Calculator", "https://github.com/mursalatul/Age_Calculator");
 
-//
+// project 2(portfolio)
+import_project_data("project2", "/pictures/project2_portfolio.png", "Portfolio", "https://github.com/mursalatul/mursalatul.github.io");
