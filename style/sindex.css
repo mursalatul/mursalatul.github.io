@@ -1,0 +1,13 @@
+body{
+    background-color: #cce0ec;
+}
+#container1{
+    background-color: white;
+}
+#index_cover{
+    padding: 300px;
+    background-image: url("/pictures/cover1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit:cover;
+}
