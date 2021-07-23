@@ -1,24 +1,3 @@
-
-// function getFetchData() {
-//     try {
-//         fetch(`https://api.github.com/users/mursalatul`).then(response => {
-//             return response.json();
-//         }).then(data => {
-//             processData(data);
-//             console.log(data);
-//         })
-//     }
-//     catch {
-//         alert("Fatch Import Error");
-//     }
-// }
-
-// function processData(project) {
-//     if (project.message != "Not Found") {
-
-//     }
-// }
-
 /**
  * this function will assign data into new project card 
  * @param {*} html_id id of the new tag

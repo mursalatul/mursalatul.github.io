@@ -8,29 +8,53 @@
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- star background css -->
+	<link rel="stylesheet" href="/style/star_back.css">
+	<!-- my css -->
 	<link rel="stylesheet" href="style/sindex.css">
 	<title>i Mursalatul !</title>
 </head>
 
 <body>
+	<!-- we will add this start to end code at the position from where we cant get stars -->
+	<!-- in the long page this problem will come. but at the small page it is ok -->
+	<!-- start background effect -->
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
+	<!-- end -->
+
+	<!-- navbar for logo and contact button -->
 	<nav class="navbar navbar-light ">
 		<div class="container-fluid">
+			<!-- logo -->
 			<a class="navbar-brand" href="https://mursalatul.github.io/">
 				<img src="/pictures/logo1.png" alt="Mursalatul">
 			</a>
+			<!-- contact button -->
 			<button type="button" class="btn btn-primary">Contact</button>
 		</div>
 	</nav>
+
+	<!-- cover(welcome text + cover pic) -->
 	<div class="container mb-4" id="container1">
 		<div class="row" id="index_cover">
-			<div class="col-md-6">
-				<h1><b>Hi this is Pallob</b></h1>
+			<div class="col-md-6 text-center my-auto">
+				<h1><b>Welcome To My Website<br>I am,<br> Mursalatul Islam Pallob</b></h1>
 				<hr>
+			</div>
+			<!-- cover picture -->
+			<div class="col-md-6">
+				<img src="/pictures/cover1.jpg" class="img-fluid rounded-pill" id="cover_image"alt="Image Failed To Load">
 			</div>
 		</div>
 	</div>
+
+	<!-- about -->
 	<div class="container mb-4">
-		<!-- <h2><i>About</i></h2> -->
+		<div class="row text-center">
+			<h2><b>About</b></h2>
+		</div>
 		<p>I am a programmer and website creator</p>
 		<p>I work with</p>
 		<ul>
@@ -42,8 +66,12 @@
 			<li>Css</li>
 			<li>bootstrap</li>
 		</ul>
+	</div>
+
+	<!-- project sector for show previous projects -->
+	<div class="container mb-4">
 		<div class="row text-center">
-			<h2>All Projects</h2>
+			<h2><b>All Projects</b></h2>
 		</div>
 		<!-- each row will contail 3 project card -->
 		<div class="row">
@@ -52,7 +80,7 @@
 				<div class="card" style="width: 18rem;">
 					<img src="" class="card-img-top" alt="image failed to load">
 					<div class="card-body">
-						<h5 class="card-title"></h5>
+						<h5 class="card-title" style="color:black; font-weight: bold;"></h5>
 						<p class="card-text"></p>
 						<a href="#" target="_blank" class="btn btn-primary">Project Link</a>
 					</div>
@@ -64,7 +92,7 @@
 				<div class="card" style="width: 18rem;">
 					<img src="" class="card-img-top" alt="image failed to load">
 					<div class="card-body">
-						<h5 class="card-title"></h5>
+						<h5 class="card-title" style="color:black; font-weight: bold;"></h5>
 						<p class="card-text"></p>
 						<a href="#" target="_blank" class="btn btn-primary">Project Link</a>
 					</div>
@@ -78,7 +106,6 @@
 	<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 	<!-- my js-->
 	<script src="/script/index_script.js"></script>
-
 </body>
 
 </html>

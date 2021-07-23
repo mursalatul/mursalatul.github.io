@@ -1,15 +1,13 @@
-body{
-    background-image: url("/pictures/page_back1.jpg");
-    background-size: cover;
+body {
+    color: white;
 }
-.container{
-    background-color: white;
+
+#cover_image {
+    max-width: 100%;
+    height: auto;
 }
-#index_cover{
-    padding: 300px;
-    background-image: url("/pictures/cover2.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto;
+
+/* setting card */
+.card {
+    background: linear-gradient(to right , #bfc6e7, #4b4ee0);
 }
