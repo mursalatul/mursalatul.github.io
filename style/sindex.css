@@ -1,13 +1,15 @@
 body{
-    background-color: #cce0ec;
+    background-image: url("/pictures/page_back1.jpg");
+    background-size: cover;
 }
-#container1{
+.container{
     background-color: white;
 }
 #index_cover{
     padding: 300px;
-    background-image: url("/pictures/cover1.jpg");
+    background-image: url("/pictures/cover2.jpg");
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    object-fit:cover;
+    background-size: auto;
 }
