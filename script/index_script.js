@@ -182,3 +182,17 @@ Project.addProjectData("All", "project2", "/pictures/project2_portfolio.png", "P
 // project3 : Windows Shutdown Timer
 Project.addProjectTemplate("All", "project_list_1", "project3");
 Project.addProjectData("All", "project3", "/pictures/project3_shutdown.png", "Windows Shutdown Timer", "https://github.com/mursalatul/shutdown-timer-for-windows")
+
+
+// when i will work on a porject i will show that on this sector. this is temporay.
+var current_about; // tell some about your project in this variable
+
+// sky bank
+current_about = "Sky Bank is a simple bank system website where i want to create a full banking system with security. The  main goal is to create a new virtual banking system";
+Project.addProjectTemplate("Current", "id_current_project", "id_sky_bank");
+Project.addProjectData("Current", "id_sky_bank", "/pictures/currentworking/sky_bank.png", "Sky Bank", current_about);
+
+// portfolio
+current_about = "I am updating my portfolio site every day.This is kinda finished + updating"
+Project.addProjectTemplate("Current", "id_current_project", "id_portfolio");
+Project.addProjectData("Current", "id_portfolio", "/pictures/cover2.jpg", "Portfolio", current_about);
