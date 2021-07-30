@@ -2,6 +2,12 @@ body {
     color: white;
 }
 
+#id_about {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
+}
+
 #cover_image {
     max-width: 100%;
     height: auto;
