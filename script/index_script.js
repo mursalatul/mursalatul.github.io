@@ -182,16 +182,32 @@ Project.addProjectData("All", "project2", "/pictures/project2_portfolio.png", "P
 Project.addProjectTemplate("All", "project_list_1", "project3");
 Project.addProjectData("All", "project3", "/pictures/project3_shutdown.png", "Windows Shutdown Timer", "https://github.com/mursalatul/shutdown-timer-for-windows")
 
-
+// -----------------------------> current woring <-------------------------------
 // when i will work on a porject i will show that on this sector. this is temporay.
 var current_about; // tell some about your project in this variable
 
-// sky bank
+// in addProjectTemplate,
+    // argument 1 will be "Current"(it means we want template about current project sector)
+    //  argument 2 will be "id_current_project" (place of the all current project. it is defined in index.html)
+    //  argument 3 will be new id of the template (as user want)
+// in addProjectData,
+    // argument 1 will be the "Current" (means we will insert data in currect prject template)
+    // argument 2 will be new template's id which we used in addProjectTemplate (means insert data into this place)
+    // argument 3 will be picture path of the project
+    // argument 4 will be title of the project
+    // argument 5 will be current_about (discription of the project)
+
+    // sky bank
 current_about = "Sky Bank is a simple bank system website where i want to create a full banking system with security. The  main goal is to create a new virtual banking system";
 Project.addProjectTemplate("Current", "id_current_project", "id_sky_bank");
 Project.addProjectData("Current", "id_sky_bank", "/pictures/currentworking/sky_bank.png", "Sky Bank", current_about);
 
 // portfolio
-current_about = "I am updating my portfolio site every day.This is kinda finished + updating"
+current_about = "I am updating my portfolio site every day.This is kinda finished + updating";
 Project.addProjectTemplate("Current", "id_current_project", "id_portfolio");
 Project.addProjectData("Current", "id_portfolio", "/pictures/cover2.jpg", "Portfolio", current_about);
+
+// schooltemplate
+current_about = "a website template for school and colleges. using this template any organization can create their own website.";
+Project.addProjectTemplate("Current",'id_current_project', "id_schooltemplate");
+Project.addProjectData("Current", "id_schooltemplate", "/pictures/currentworking/schooltemplate.png","School Template", current_about);
