@@ -149,7 +149,6 @@ class Project {
         }
         else if (project_type == "Current") {
             // adding user provided informations about current working project data into the new card in Current working section
-            console.log(document.getElementById(new_project_id));
             let ele2 = document.getElementById(new_project_id).children[0];
             // adding picture
             ele2.children[0].children[0].attributes.src.value = project_pic;
