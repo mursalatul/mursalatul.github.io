@@ -170,17 +170,21 @@ class Project {
 
 
 
-
+// ------------------------------> all projects <--------------------------------
 // adding projects (adding it in main js file cause this sector is permanant)
 // project1 : Age Calculator
 Project.addProjectTemplate("All", "project_list_1", "project1");
-Project.addProjectData("All", "project1", "/pictures/age_calculator.png", "Age Calculator", "https://github.com/mursalatul/Age_Calculator")
+Project.addProjectData("All", "project1", "/pictures/all projects/age_calculator.png", "Age Calculator", "https://github.com/mursalatul/Age_Calculator")
+
 // project2 : Portfolio
 Project.addProjectTemplate("All", "project_list_1", "project2");
-Project.addProjectData("All", "project2", "/pictures/project2_portfolio.png", "Portfolio", "https://github.com/mursalatul/mursalatul.github.io")
+Project.addProjectData("All", "project2", "/pictures/all projects/project2_portfolio.png", "Portfolio", "https://github.com/mursalatul/mursalatul.github.io")
+
 // project3 : Windows Shutdown Timer
 Project.addProjectTemplate("All", "project_list_1", "project3");
-Project.addProjectData("All", "project3", "/pictures/project3_shutdown.png", "Windows Shutdown Timer", "https://github.com/mursalatul/shutdown-timer-for-windows")
+Project.addProjectData("All", "project3", "/pictures/all projects/project3_shutdown.png", "Windows Shutdown Timer", "https://github.com/mursalatul/shutdown-timer-for-windows")
+
+
 
 // -----------------------------> current woring <-------------------------------
 // when i will work on a porject i will show that on this sector. this is temporay.
@@ -205,7 +209,7 @@ Project.addProjectData("Current", "id_sky_bank", "/pictures/currentworking/sky_b
 // portfolio
 current_about = "I am updating my portfolio site every day.This is kinda finished + updating";
 Project.addProjectTemplate("Current", "id_current_project", "id_portfolio");
-Project.addProjectData("Current", "id_portfolio", "/pictures/cover2.jpg", "Portfolio", current_about);
+Project.addProjectData("Current", "id_portfolio", "/pictures/currentworking/fortfolio.jpg", "Portfolio", current_about);
 
 // schooltemplate
 current_about = "a website template for school and colleges. using this template any organization can create their own website.";
