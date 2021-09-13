@@ -3,8 +3,8 @@
 // 
 // 
 // 
-// contact input box
 
+// contact input box (start)
 // color beep of direct message field when click the direct message icon in contact section
 let direct_message = document.getElementById('direct_message');
 direct_message.addEventListener('click', colorbeep);
@@ -77,7 +77,7 @@ function ValidateEmail(mail) {
     alert("You have entered an invalid email address!")
     return (false)
 }
-
+// contact input box (end)
 // 
 // 
 // 

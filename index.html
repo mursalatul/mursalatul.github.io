@@ -59,14 +59,14 @@
 		<div id="id_about">
 			<p>I am a student of Dhaka International University. I am in CSE department. I love programming. I know
 				programming languages like,</p>
-			<ul>
+			<ul style="color: rgb(92, 236, 148);">
 				<li>C</li>
 				<li>C++</li>
 				<li>Python</li>
 				<li>Javascript</li>
 			</ul>
 			<p>Besides that, I am working in the web development sector also. I know,</p>
-			<ul>
+			<ul style="color: rgb(92, 236, 148);">
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>Bootstrap</li>
@@ -81,8 +81,8 @@
 			<h2><b>All Projects</b></h2>
 		</div>
 		<!-- each row will contail 3 project card -->
-		<div class="row " id="project_list_1"></div>
-		<div class="row " id="project_list_2"></div>
+		<div class="row " id="all_projects_list_1_id"></div>
+		<div class="row " id="all_projects_list_2_id"></div>
 	</div>
 
 	<!-- currently working on project -->
@@ -91,7 +91,7 @@
 			<h2><b>Currently Working on ___</b></h2>
 		</div>
 		<!-- horizontal card placing section-->
-		<div class="row d-flex justify-content-center" id="id_current_project"></div>
+		<div class="row d-flex justify-content-center" id="current_projects_id"></div>
 	</div>
 
 	<!--  -->
@@ -102,7 +102,7 @@
 		<table class="table d-flex justify-content-center">
 			<tr>
 				<td>
-					<!-- direct message -->
+					<!-- direct message icon-->
 					<abbr title="Direct message">
 						<a href="#direct_message_name" id='direct_message'>
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -116,7 +116,7 @@
 					</abbr>
 				</td>
 				<td>
-					<!-- facebook -->
+					<!-- facebook icon-->
 					<abbr title="Facebook">
 						<a href="https://www.facebook.com/mursalatul.pallob/">
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -128,7 +128,7 @@
 					</abbr>
 				</td>
 				<td>
-					<!-- email -->
+					<!-- email icon -->
 					<abbr title="Gmail">
 						<a href="mailto:mursalatulislmapallob@gmail.com">
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -140,7 +140,7 @@
 					</abbr>
 				</td>
 				<td>
-					<!-- github -->
+					<!-- github icon-->
 					<abbr title="Github">
 						<a href="https://github.com/mursalatul/">
 							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -159,18 +159,25 @@
 	<!--  -->
 	<!-- direct message input section -->
 	<div class="container" id="direct_message2">
-		<!-- name -->
-		<div class="input-group mb-3">
-			<span class="input-group-text" id="basic-addon1">Your Name</span>
-			<input type="text" class="form-control" placeholder="example: Albart Einsteins" aria-label="Username"
-				aria-describedby="basic-addon1" id="direct_message_name">
-		</div>
-
-		<!-- email address -->
-		<div class="input-group mb-3">
-			<span class="input-group-text" id="basic-addon1">Email Address</span>
-			<input type="text" class="form-control" placeholder="example: potato@email.com" aria-label="Username"
-				aria-describedby="basic-addon1" id="direct_message_email">
+		<div class="row mb-2">
+			<!-- using column to show name field and email field in same line in md, lg and xl screen -->
+			<div class="col-md-6 col-lg-6 col-xl-6 col-sm-12">
+				<!-- name -->
+				<div class="input-group">
+					<span class="input-group-text" id="basic-addon1">Your Name</span>
+					<input type="text" class="form-control" placeholder="example: Albart Einsteins" aria-label="Username"
+					aria-describedby="basic-addon1" id="direct_message_name">
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-lg-6 col-xl-6 col-sm-12">
+				<!-- email address -->
+				<div class="input-group">
+					<span class="input-group-text" id="basic-addon1">Email Address</span>
+					<input type="text" class="form-control" placeholder="example: potato@email.com" aria-label="Username"
+					aria-describedby="basic-addon1" id="direct_message_email">
+				</div>
+			</div>
 		</div>
 
 		<!-- Question / Suggestion -->
@@ -193,7 +200,7 @@
 	<!-- bootstrap js -->
 	<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 	<!-- my js-->
-	<script src="/script/index_script.js"></script>
+	<script src="/script/show_projects.js"></script>
 	<script src="/script/index_script2.js"></script>
 </body>
 

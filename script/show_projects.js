@@ -172,27 +172,39 @@ class Project {
 
 // ------------------------------> all projects <--------------------------------
 // adding projects (adding it in main js file cause this sector is permanant)
+// 
+// in addProjectTemplate,
+    // argument 1 will be "All"(it means we want template about All project sector)
+    //  argument 2 will be "all_projects_list_1_id" (place of the all projects. it is defined in index.html)
+    //  argument 3 will be new id of the template (as user want)
+// in addProjectData,
+    // argument 1 will be the "All" (means we will insert data in All prject template)
+    // argument 2 will be new template's id which we used in addProjectTemplate (means insert data into this place)
+    // argument 3 will be picture path of the project
+    // argument 4 will be title of the project
+    // argument 5 will be current_about (discription of the project)
+// 
 // project1 : Age Calculator
-Project.addProjectTemplate("All", "project_list_1", "project1");
+Project.addProjectTemplate("All", "all_projects_list_1_id", "project1");
 Project.addProjectData("All", "project1", "/pictures/all projects/age_calculator.png", "Age Calculator", "https://github.com/mursalatul/Age_Calculator")
 
 // project2 : Portfolio
-Project.addProjectTemplate("All", "project_list_1", "project2");
+Project.addProjectTemplate("All", "all_projects_list_1_id", "project2");
 Project.addProjectData("All", "project2", "/pictures/all projects/project2_portfolio.png", "Portfolio", "https://github.com/mursalatul/mursalatul.github.io")
 
 // project3 : Windows Shutdown Timer
-Project.addProjectTemplate("All", "project_list_1", "project3");
+Project.addProjectTemplate("All", "all_projects_list_1_id", "project3");
 Project.addProjectData("All", "project3", "/pictures/all projects/project3_shutdown.png", "Windows Shutdown Timer", "https://github.com/mursalatul/shutdown-timer-for-windows")
 
 
 
 // -----------------------------> current woring <-------------------------------
 // when i will work on a porject i will show that on this sector. this is temporay.
-var current_about; // tell some about your project in this variable
+var current_about; // tell somethin about your project in this variable
 
 // in addProjectTemplate,
     // argument 1 will be "Current"(it means we want template about current project sector)
-    //  argument 2 will be "id_current_project" (place of the all current project. it is defined in index.html)
+    //  argument 2 will be "current_projects_id" (place of the all current project. it is defined in index.html)
     //  argument 3 will be new id of the template (as user want)
 // in addProjectData,
     // argument 1 will be the "Current" (means we will insert data in currect prject template)
@@ -203,15 +215,15 @@ var current_about; // tell some about your project in this variable
 
     // sky bank
 current_about = "Sky Bank is a simple bank system website where i want to create a full banking system with security. The  main goal is to create a new virtual banking system";
-Project.addProjectTemplate("Current", "id_current_project", "id_sky_bank");
+Project.addProjectTemplate("Current", "current_projects_id", "id_sky_bank");
 Project.addProjectData("Current", "id_sky_bank", "/pictures/currentworking/sky_bank.png", "Sky Bank", current_about);
 
 // portfolio
 current_about = "I am updating my portfolio site every day.This is kinda finished + updating";
-Project.addProjectTemplate("Current", "id_current_project", "id_portfolio");
+Project.addProjectTemplate("Current", "current_projects_id", "id_portfolio");
 Project.addProjectData("Current", "id_portfolio", "/pictures/currentworking/fortfolio.jpg", "Portfolio", current_about);
 
 // schooltemplate
 current_about = "a website template for school and colleges. using this template any organization can create their own website.";
-Project.addProjectTemplate("Current",'id_current_project', "id_schooltemplate");
+Project.addProjectTemplate("Current",'current_projects_id', "id_schooltemplate");
 Project.addProjectData("Current", "id_schooltemplate", "/pictures/currentworking/schooltemplate.png","School Template", current_about);
