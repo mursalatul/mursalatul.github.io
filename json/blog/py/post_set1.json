@@ -1,0 +1,14 @@
+{
+    "post1" : {
+        "title" : "About C language !",
+        "text" : " C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.It was designed and developed by Dennis Ritchie in 1972 to 1972."
+    },
+    "post2" : {
+        "title" : "Variable Types in C / C++",
+        "text" : "char, signed char, unsigned char, short, int, long int , long long int"
+    },
+    "post3" : {
+        "title" : "Why c++ is better then c ?",
+        "text" : "we get some extra headers in c++ which is not supported in c. with this headers we can perform many complex tasks easily. besides that all the headers of c is supported in c++. for this reasons, c++ is better then c"
+    }
+}
