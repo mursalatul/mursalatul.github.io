@@ -35,10 +35,12 @@ body {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
 }
-/*  */
-/*  */
-
 /* changing carousel speed */
 .carousel .carousel-item {
     transition-duration: 3s;
 }
+/*  */
+/*  */
+/*  */
+
+/* show outside the boundary massage on hover */

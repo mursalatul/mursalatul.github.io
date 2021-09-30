@@ -23,13 +23,13 @@ function clearData(event) {
     tag_div.id = "sub_blog_show_place";
     post_place.appendChild(tag_div); // adding new div in post_place
 
-    whichPost(event.target.id, post_place); // calling post managing function
+    whichPost(event.target.id); // calling post managing function
 }
 
 // managing target post by finding right json
 let json_loction;
-function whichPost(target, post_place) { // target = the name of the id, which was clicked
+function whichPost(target) { // target = the name of the id, which was clicked
     json_loction = `/json/blog/${target}/post_set1.json`;
     // importing json data
-    getFetchData(json_loction, post_place);
+    getFetchData(json_loction);
 }

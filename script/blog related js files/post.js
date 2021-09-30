@@ -1,10 +1,10 @@
 // this function will import data from json file
-function getFetchData(json_loction, post_place) {
+function getFetchData(json_loction) {
     try {
         fetch(json_loction).then(response => {
             return response.json();
         }).then(data => {
-            processData(data, post_place);
+            processData(data);
         })
     }
     catch {
@@ -13,7 +13,7 @@ function getFetchData(json_loction, post_place) {
 }
 
 // show posts into location
-function processData(importedData, post_place) {
+function processData(importedData) {
     if (importedData.message != "Not Found") {
         
         let data = importedData;
@@ -34,12 +34,13 @@ function processData(importedData, post_place) {
 // creating post and show on page
 function createPost(title, text) {
     let tag_h4 = document.createElement("h4"); // creating h4
+    tag_h4.innerHTML = "&#164  "; // adding a logo
     let tag_b = document.createElement("b"); // creating b
     tag_b.innerHTML = title; // inserting title inside b tag
     tag_h4.appendChild(tag_b); // inserting b tag into h4 tag
 
     let tag_p = document.createElement("p"); // creating p
-    tag_p.innerHTML = text;
+    tag_p.innerHTML = `${text}<hr>`;
 
     let m_place = document.getElementById("sub_blog_show_place");
     m_place.appendChild(tag_h4);
