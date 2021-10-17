@@ -19,7 +19,6 @@ function clearData(event) {
 
     // creating new div for show posts inside this div
     let tag_div = document.createElement("div");
-    tag_div.classList = "row";
     tag_div.id = "sub_blog_show_place";
     post_place.appendChild(tag_div); // adding new div in post_place
     if (event.target.id == "npc") {
