@@ -33,9 +33,9 @@ function processData(importedData) {
 
 // creating post and show on page
 function createPost(title, text) {
-    let tag_h4 = document.createElement("h4"); // creating h4
-    tag_h4.innerHTML = "&#164  "; // adding a logo
-    let tag_b = document.createElement("b"); // creating b
+    let tag_h4 = document.createElement("h4"); // creating h4 for title
+    tag_h4.innerHTML = "&#164  "; // adding a title logo
+    let tag_b = document.createElement("b"); // creating b tag for bold the title
     tag_b.innerHTML = title; // inserting title inside b tag
     tag_h4.appendChild(tag_b); // inserting b tag into h4 tag
 

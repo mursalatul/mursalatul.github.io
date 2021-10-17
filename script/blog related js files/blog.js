@@ -22,8 +22,14 @@ function clearData(event) {
     tag_div.classList = "row";
     tag_div.id = "sub_blog_show_place";
     post_place.appendChild(tag_div); // adding new div in post_place
-
-    whichPost(event.target.id); // calling post managing function
+    if (event.target.id == "npc") {
+        // npc will be show in pdf format with this function
+        triggerPdf(event.target.id);
+    }
+    else {
+        // other blogs will be showen as json
+        whichPost(event.target.id); // calling post managing function
+    }
 }
 
 // managing target post by finding right json
@@ -32,4 +38,9 @@ function whichPost(target) { // target = the name of the id, which was clicked
     json_loction = `/json/blog/${target}/post_set1.json`;
     // importing json data
     getFetchData(json_loction);
+}
+
+// managing pdf blogs
+function triggerPdf(target) {
+    pdf(); // this function is from importPdfBlog.js file
 }
