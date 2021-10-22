@@ -228,7 +228,7 @@ current_about = "a website template for school and colleges. using this template
 Project.addProjectTemplate("Current",'current_projects_id', "id_schooltemplate");
 Project.addProjectData("Current", "id_schooltemplate", "/pictures/currentworking/schooltemplate.png","School Template", current_about);
 
-// c_helping_headers
+// cheaders
 current_about = "Some essential headers for c programming language. It will help a programmer to write c code more easily. You might find this kind of headers in c++, but they are not available in c. So the purpose of this project is creating header files for c for getting features like python or c++ languages.";
 Project.addProjectTemplate("Current", "current_projects_id","id_c_helping_headers");
-Project.addProjectData("Current", "id_c_helping_headers", "/pictures/currentworking/cLanguageIcon.png","C Helping Headers", current_about);
+Project.addProjectData("Current", "id_c_helping_headers", "/pictures/currentworking/cLanguageIcon.png","cheaders", current_about);
