@@ -1,10 +1,10 @@
 // functions
-function getFetchData(show_all) {
+function getFetchData(show = "") {
     try {
         fetch(`https://api.github.com/users/mursalatul/repos`).then(response => {
             return response.json();
         }).then(data => {
-            processData(data, show_all);
+            processData(data, show);
         })
     }
     catch {
@@ -12,30 +12,23 @@ function getFetchData(show_all) {
     }
 }
 
-function processData(importedData, show_all) {
+function processData(importedData, show) {
     if (importedData.message != "Not Found") {
-        console.log(importedData);
+        // console.log(importedData);
         // show 3 projects
-        if (show_all === false) {
+        if (show === "3") {
             for (var i = 0; i < 3; i++) {
-                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url);
+                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_1_id");
             }
         }
-        // show all project 
+        // show rest of the projects
         else {
             for (var i = 3; i < importedData.length; i++) {
-                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url);
+                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_2_id");
             }
-            document.getElementById("more_project").textContent = "Less";
-            
         }
     }
     else {
         alert("No User Found with this name");
     }
 }
-
-getFetchData(false);
-let searchButton = document.getElementById("more_project");
-// catch events
-searchButton.addEventListener("click", getFetchData);

@@ -1,8 +1,7 @@
-function createCard(project_image_path, project_title, project_description, project_link) {
+function createCard(project_image_path, project_title, project_description, project_link, card_place_in_html) {
     // 1st div.
     let div1 = document.createElement("div");
-    div1.classList = "col-md-4 col-xs-12 p-2 border border-danger  text-center";
-    
+    div1.classList = `col-md-4 col-xs-12 p-2 border border-danger text-center`;
     div1.id = project_title;
 
     // 2nd div. card start here
@@ -39,7 +38,7 @@ function createCard(project_image_path, project_title, project_description, proj
     show_hide_button.className = "btn btn-outline-info btn-sm";
     let button_id = `${project_title}` + "show_hide_button_id";
     show_hide_button.id = button_id;
-    show_hide_button.setAttribute("onclick", `manage_desciption(${dis_id}, ${button_id})`)
+    show_hide_button.setAttribute("onclick", `show_hide_tag(${dis_id}, ${button_id})`)
     show_hide_button.setAttribute("type", "button");
     show_hide_button.textContent = "Show Description";
 
@@ -63,18 +62,5 @@ function createCard(project_image_path, project_title, project_description, proj
     div1.appendChild(div2);
 
     // placing in index.html
-    document.getElementById("all_projects_list_1_id").appendChild(div1);
-}
-
-// document.getElementById("show_hide_button_id").addEventListener("click", manage_description);
-
-// this function will show and hide description about a project
-function manage_desciption(des, btn) {
-    if (des.style.display === "none") {
-        des.style.display = "block";
-        btn.textContent = "Hide Description"; // when description is showen ask for hide
-    } else {
-        des.style.display = "none";
-        btn.textContent = "Show Description"; // when description is hidden ask for show
-    }
+    document.getElementById(`${card_place_in_html}`).appendChild(div1);
 }
