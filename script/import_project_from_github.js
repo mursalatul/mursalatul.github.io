@@ -18,13 +18,13 @@ function processData(importedData, show) {
         // show 3 projects
         if (show === "3") {
             for (var i = 0; i < 3; i++) {
-                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_1_id");
+                createCard("/pictures/all projects/logo for project.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_1_id");
             }
         }
         // show rest of the projects
         else {
             for (var i = 3; i < importedData.length; i++) {
-                createCard("/pictures/all projects/age_calculator.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_2_id");
+                createCard("/pictures/all projects/logo for project.png", importedData[i].name, importedData[i].description, importedData[i].html_url, "all_projects_list_2_id");
             }
         }
     }

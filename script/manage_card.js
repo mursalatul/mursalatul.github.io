@@ -28,4 +28,4 @@ function show_hide_tag(tag, btn) {
     }
 }   
 
-ethereum.autoRefreshOnNetworkChange = false
+// ethereum.autoRefreshOnNetworkChange = false
